@@ -394,8 +394,12 @@ ul {
   align-items: baseline;
 }
 
-.footer-logo-text {
+.footer-inner.container div:nth-child(1) {
   margin-right: 120px;
+}
+
+.footer-inner.container div:nth-child(2) {
+  margin-right: 80px;
 }
 
 .footer-inner .nav-logo {
@@ -416,7 +420,6 @@ ul {
 
 .social-media-menu {
   gap: 16px;
-  margin-right: 80px;
 }
 
 .icon-media {
@@ -661,6 +664,7 @@ Modal window:
 }
 
 .input-form {
+  color: var(--secondary-dark-color);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
@@ -693,6 +697,7 @@ Modal window:
   position: absolute;
   left: 16px;
   top: 50%;
+  fill: var(--secondary-dark-color);
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -708,7 +713,6 @@ Modal window:
 
 .textarea-modal {
   resize: none;
-  color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
   width: 360px;
   height: 120px;
