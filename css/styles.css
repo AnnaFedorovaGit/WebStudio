@@ -38,7 +38,8 @@ ul {
 
 .container {
   /* ???? */
-  width: 320px;
+  /* width: 320px; */
+  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -47,21 +48,22 @@ ul {
 
 @media (min-width: 428px) and (max-width: 767px) {
   .container {
-    /* ???? */
-    /* width: 428px; */
-    width: 396px;
+    width: 428px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
   .container {
     width: 768px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1158px) {
   .container {
     width: 1158px;
+    max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -167,26 +169,22 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
-  .menu-burger {
-    display: none;
-  }
-}
-
 /* 
 
 --------------------------
 
 ????? :
 */
-@media (min-width: 320px) and (max-width: 767px) {
+/* @media (min-width: 320px) and (max-width: 767px) { */
+@media (max-width: 767px) {
   .pagination-menu.list,
   .nav-contacts {
     display: none;
   }
 }
 
-@media (min-width: 320px) and (max-width: 1157px) {
+/* @media (min-width: 320px) and (max-width: 1157px) { */
+@media (max-width: 1157px) {
   .icon-wrap.icon-advantages-wrap,
   .advantages-menu .title-three,
   .section.proposals {
@@ -319,6 +317,18 @@ ul {
   background-position: center center;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg@2x.jpg");
+  }
+}
+
 @media (min-width: 1158px) {
   .section-one {
     padding-top: 188px;
@@ -414,6 +424,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
   }
 }
 /* ??????????? */
@@ -465,8 +476,9 @@ ul {
 
 @media (min-width: 1158px) {
   .advantages-menu,
-  .proposals-menu,
-  .team-links
+  .proposals-menu
+  /* ,
+  .team-links */
   /* , 
   .team-cards-menu,
   .customers-menu,
@@ -490,14 +502,17 @@ ul {
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
+  /* .section.inner-four .team-cards-menu.list .team-card, */
   .box-advantages .advantages-menu.list .item {
     width: calc((100% - 24px) / 2);
   }
 }
 
 @media (min-width: 1158px) {
+  .section.inner-four .team-cards-menu.list .team-card,
   .box-advantages .advantages-menu.list .item {
     width: calc((100% - 72px) / 4);
+    max-width: 264px;
   }
 }
 
@@ -509,8 +524,9 @@ ul {
 }
 
 .icon-advantages-wrap {
-  min-width: 264px;
-  min-height: 112px;
+  /* min-width: 264px;
+  min-height: 112px; */
+  padding: 24px 100px;
   background-color: var(--bg-color-two);
   margin-bottom: 8px;
 }
@@ -550,10 +566,9 @@ ul {
   object-fit: cover;
 }
 
-/* 
 .image-border {
   border: 1px solid var(--border-light-color);
-} */
+}
 
 .inner-four {
   background-color: var(--bg-color-two);
@@ -584,6 +599,10 @@ ul {
   margin-bottom: 8px;
   display: flex;
   justify-content: center;
+}
+
+.team-links {
+  gap: 24px;
 }
 
 .team-links .link {
@@ -633,28 +652,31 @@ ul {
 
 @media (min-width: 768px) and (max-width: 1157px) {
   .customers-menu.list {
-    max-width: 552px;
+    /* max-width: 552px; */
   }
 }
 
 .customers-menu.list .item {
   width: calc((100% - 16px) / 2);
+  max-width: 190px;
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
   .customers-menu.list .item {
     width: calc((100% - 48px) / 3);
+    max-width: 168px;
   }
 }
 
 @media (min-width: 1158px) {
   .customers-menu.list .item {
     width: calc((100% - 120px) / 6);
+    max-width: 168px;
   }
 }
 
 .customer-link {
-  min-height: 88px;
+  height: 88px;
   border: 1px solid var(--customer-icons-color);
   color: var(--customer-icons-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),

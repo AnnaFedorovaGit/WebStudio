@@ -76,11 +76,10 @@
     </header>
 
     <main class="main-block">
+      <!-- <section class="section-one">
+        <div class="box-solutions container"> -->
       <section class="section-one">
-        <!-- Всі фонові і контентні растрові зображення - респонсивні і підтримують екрани щільністю x1 і x2.
-        
-        Для респонсивних фонових зображень використані медіа-функціі min-device-pixel-ratio і min-resolution. -->
-        <div class="box-solutions container">
+        <div class="container box-solutions">
           <h1 class="title-one">Effective Solutions for Your Business</h1>
           <button
             class="button button-blue button-size order-service"
@@ -91,8 +90,9 @@
           </button>
         </div>
       </section>
+      <!--  -->
       <section class="section">
-        <div class="box-advantages container">
+        <div class="container box-advantages">
           <h2 class="title-two visually-hidden">Advantages</h2>
           <ul class="advantages-menu list">
             <li class="item">
@@ -160,14 +160,16 @@
       </section>
 
       <!-- none -->
+      <!--  -->
       <section class="section proposals">
-        <div class="box-proposals container">
+        <div class="container box-proposals">
           <h2 class="title-two">What are we doing</h2>
           <ul class="proposals-menu list">
             <li class="item">
-              <!-- image-border delete? -->
+              <!-- --------------------------------------- -->
               <img
                 class="image image-border"
+                srcset="./images/proposal1.jpg 1x, ./images/proposal1@2x.jpg 2x"
                 src="./images/proposal1.jpg"
                 alt="A website with graphs is open on the monitor"
                 width="360"
@@ -177,6 +179,7 @@
             <li class="item">
               <img
                 class="image image-border"
+                srcset="./images/proposal2.jpg 1x, ./images/proposal2@2x.jpg 2x"
                 src="./images/proposal2.jpg"
                 alt="Four screens of phones with chat correspondence"
                 width="360"
@@ -186,6 +189,7 @@
             <li class="item">
               <img
                 class="image image-border"
+                srcset="./images/proposal3.jpg 1x, ./images/proposal3@2x.jpg 2x"
                 src="./images/proposal3.jpg"
                 alt="A phone with an open application and a laptop with an open website"
                 width="360"
@@ -196,6 +200,7 @@
         </div>
       </section>
 
+      <!--  -->
       <section class="section inner-four">
         <div class="container">
           <h2 class="title-two">Our team</h2>
@@ -203,6 +208,7 @@
             <li class="team-card">
               <img
                 class="image"
+                srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
                 src="./images/team1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -246,6 +252,7 @@
             <li class="team-card">
               <img
                 class="image"
+                srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
                 src="./images/team2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -289,6 +296,7 @@
             <li class="team-card">
               <img
                 class="image"
+                srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x"
                 src="./images/team3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -332,6 +340,7 @@
             <li class="team-card">
               <img
                 class="image"
+                srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x"
                 src="./images/team4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -499,6 +508,7 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu" type="button">
+        <!-- різна заливка ? -->
         <svg class="icon-close" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
